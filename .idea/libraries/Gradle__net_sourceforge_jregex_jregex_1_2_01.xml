@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.sourceforge.jregex:jregex:1.2_01">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.jregex/jregex/1.2_01/122a715b33ee82f8c591b711f36c809ea5d9db58/jregex-1.2_01.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.jregex/jregex/1.2_01/29a2c9cfa42110ad926022b8fb4af61acaddc6db/jregex-1.2_01-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

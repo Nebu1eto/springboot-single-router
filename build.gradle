@@ -1,0 +1,44 @@
+buildscript {
+	ext {
+		springBootVersion = '1.3.5.RELEASE'
+		kotlinVersion = '1.0.2'
+	}
+
+	repositories {
+		mavenCentral()
+	}
+
+	dependencies {
+		classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+		classpath('io.spring.gradle:dependency-management-plugin:0.5.6.RELEASE')
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'kotlin'
+apply plugin: 'idea'
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'spring-boot' 
+
+jar {
+	baseName = 'springboot-single-router'
+	version = '0.0.1-SNAPSHOT'
+}
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	compile('org.springframework.boot:spring-boot-starter')
+	compile('org.springframework.boot:spring-boot-starter-web')
+	compile("org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}")
+	compile('net.sourceforge.jregex:jregex:1.2_01')
+	compile('commons-io:commons-io:2.4')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
